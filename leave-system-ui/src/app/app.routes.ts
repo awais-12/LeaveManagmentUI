@@ -6,7 +6,7 @@ import { LeaveTypesComponent } from './leave-types.component';
 import { LeaveSettlementsComponent } from './leave-settlements.component';
 
 export const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', pathMatch: 'full', component: DashboardComponent },
   { path: 'apply-leave', component: ApplyLeaveComponent },
   { path: 'approvals', component: ApprovalsComponent },
   { path: 'leave-types', component: LeaveTypesComponent },
